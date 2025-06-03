@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About & FAQs</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/21e48a88-8990-46c8-9dc5-259bb27daa0a/Capture.PNG?v=1748011471780">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/game-files/track.js" defer></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #1e2229;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      header {
+        background: #353d4a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+
+      .faq-item {
+        background: #18202e;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 15px 20px;
+        background-color: #2c4061;
+        cursor: pointer;
+        font-weight: bold;
+        color: #dae2f0;
+        transition: background-color 0.2s ease;
+      }
+
+      .faq-question:hover {
+        background-color: black;
+      }
+
+      .faq-answer {
+        padding: 15px 20px;
+        display: none;
+        color: white;
+        border-top: 1px solid #eee;
+      }
+
+      .faq-answer a {
+        color: #5389e0;
+        text-decoration: none;
+      }
+
+      .faq-answer a:hover {
+        text-decoration: underline;
+      }
+
+      .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #0077cc;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.faq-question').forEach((question) => {
+          question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isOpen = answer.style.display === 'block';
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+            answer.style.display = isOpen ? 'none' : 'block';
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>About & Frequently Asked Questions</header>
+
+    <div class="container">
+      <div class="faq-item">
+        <div class="faq-question">What is this?</div>
+        <div class="faq-answer">
+          This is a collection of games I found and put together. I've worked hard to make sure all the games are ad-free.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How do you get these games?</div>
+        <div class="faq-answer">
+          These games are pulled from other websites that usually include ads or tracking. Here, they are ad-free and less disruptive.
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question">Are the games ad-free?</div>
+        <div class="faq-answer">
+          Most are ad-free, but a few may still contain ads. We'll clearly mark any games that have unavoidable ads.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I suggest a game?</div>
+        <div class="faq-answer">
+          Yes! You can request or suggest games through the <a href="/feedback">feedback page</a>.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Who created this website?</div>
+        <div class="faq-answer">
+          Luke (programmer and sysadmin)<br>
+          Harry (head of advertising)
+        </div>
+      </div>
+
+      <a href="/" class="back-link">◄ Back to Home</a>
+    </div>
+  </body>
+</html>
