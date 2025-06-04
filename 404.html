@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 - Page Not Found</title>
+  <style>
+    body {
+      background-color: rgb(14, 14, 14);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 3rem;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+      font-weight: normal;
+      margin: 0.5rem 0;
+      opacity: 0;
+      animation: fadeIn 1.2s forwards 0.5s;
+    }
+    a {
+      color: cyan;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: lightcyan;
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>404 page not found.</h1>
+  <h2>You find yourself in a strange place.</h2>
+  <h2 id="href"></h2>
+  <h2>If not, you can go back to <a href="/">the home page.</a></h2>
+
+  <script>
+    document.getElementById("href").textContent = "If your name is Luke, something went wrong; specifically at: " + window.location.href;
+    if (window.location.href.includes("404.html")){
+        document.getElementById("href").textContent = "hey... wait a minute! why are you here? 🤔🤨"
+    }
+  </script>
+</body>
+</html>
