@@ -100,20 +100,68 @@
     .search-bar input::placeholder {
       color: #b1c2de;
     }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
   </style>
 </head>
 
 <body>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/about">About 🫡</a>
+  <a href="/feedback">Feedback 🗣️🗣️</a>
+  <a href="/privacy-policy">Privacy Policy 🧠</a>
+  <a href="/terms-of-use">Terms of Use 📚</a>
+  </div>
   <div class="header">
     <img class="logo" src="https://www.lukegames.ca/game-files/logo.png" alt="Site Logo" />
+    
     <h2>Luke Games</h2>
-    <h4>We have <strong>58</strong> educational games.</h4>
+    <h4>We have <strong>59</strong> educational games.</h4>
     <h4>Powered by Luke.</h4>
   </div>
-
+  <span style="font-size:25px;cursor:pointer;color:white; padding: 10px;" onclick="openNav()">&#9776; menu</span>
   <div class="search-bar">
     <input type="text" id="gameSearch" placeholder='Try searching for "action"' />
   </div>
+ 
 
   <div class="game-grid">
     <!-- Category: action -->
@@ -131,7 +179,7 @@
     </div>
     <div class="game-box">
     <a href="/games/action/crazy-cattle-3d"><img alt="Crazy Cattle 3D" src="https://kbhgames.com/wp-content/uploads/2025/05/Crazy-Cattle-3D.jpg"/>Crazy Cattle 3D
-        </a>
+            </a>
     </div>
     <div class="game-box">
     <a href="/games/action/funny-shooter-2"><img alt="Funny Shooter 2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScUXBTe2dQvh7aq3RT4P3fmWgRkTqaMIuP2g&amp;s"/>Funny Shooter 2</a>
@@ -153,7 +201,7 @@
     </div>
     <div class="game-box">
     <a href="/games/action/rooftop-snipers"><img alt="Rooftop Snipers" src="https://img.gamepix.com/games/rooftop-snipers/cover/rooftop-snipers.png"/>Rooftop
-        Snipers</a>
+            Snipers</a>
     </div>
     <div class="game-box">
     <a href="/games/action/spear-warzone"><img alt="Spear Warzone" src="https://1games.io/data/image/game/spear-warzone/banner/spear-wazone-1200x1200.png"/>Spear Warzone</a>
@@ -209,14 +257,12 @@
     <a href="/games/arcade/under-the-red-sky"><img alt="Under The Red Sky" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUBT9PxKg9R838IKPRd7H-e80EsPPhKnxYw&amp;s"/>Under The Red Sky</a>      
     </div>
 
-    <!-- Category: drive-mad -->
-    <div class="game-box">
-    <a href="/games/drive-mad"><img alt="Drive Mad" src="https://play-lh.googleusercontent.com/7l3WAPbei9MXrxnCzImpXi2VxjEBtgDl0htwvTnA-YqpJAuQJPpSiby1oB8LZMgD0IAy"/>Drive Mad</a>
-    </div>
-
     <!-- Category: racing -->
     <div class="game-box">
     <a href="/games/racing/drift-hunters"><img alt="Drift Hunters" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71Gd0HQjdZ6BcHphNEvh1rLhYLL3V-_tSjw&amp;s"/>Drift Hunters</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/drive-mad"><img alt="Drive Mad" src="https://play-lh.googleusercontent.com/7l3WAPbei9MXrxnCzImpXi2VxjEBtgDl0htwvTnA-YqpJAuQJPpSiby1oB8LZMgD0IAy"/>Drive Mad</a>
     </div>
     <div class="game-box">
     <a href="/games/racing/eggy-car"><img alt="Eggy Car" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3AihY6tU2_XRZ0CU2ZrE6v5qDzgKjkqfKOQ&amp;s"/>Eggy Car</a>
@@ -258,7 +304,7 @@
     </div>
     <div class="game-box">
     <a href="/games/simulator/idle-breakout"><img alt="Idle Breakout" src="https://img.itch.zone/aW1hZ2UvMzI5MTMxLzE4MDAxNDYucG5n/original/bo9BNe.png"/>Idle
-        Breakout</a>
+            Breakout</a>
     </div>
     <div class="game-box">
     <a href="/games/simulator/idle-mining-empire"><img alt="Idle Mining Empire" src="https://www.mortgagecalculator.org/money-games/idle-mining-empire/idle-mining-empire.png"/>Idle Mining Empire</a>        
@@ -293,6 +339,9 @@
     <a href="/games/strategy/escaping-the-prison"><img alt="Escaping the Prison" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_us-FoQoSP4m9wJjqoeJSuRWThnj7LOJjgw&amp;s"/>Escaping the Prison</a>
     </div>
     <div class="game-box">
+    <a href="/games/strategy/happy-glass"><img alt="Happy Glass" src="https://cdn-images-1.medium.com/v2/resize:fit:1600/1*SOrhgaiP7486cPFNnSfYpQ.png"/>Happy Glass</a>
+    </div>
+    <div class="game-box">
     <a href="/games/strategy/little-alchemy-2"><img alt="Little Alchemy 2" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/little-alchemy-a-lot-of-items-in-scene.jpg"/>Little Alchemy 2</a>
     </div>
     <div class="game-box">
@@ -311,11 +360,16 @@
         const href = link.getAttribute("href").toLowerCase();
 
         const matches = title.includes(query) || href.includes(query);
-
-        // You can use "inline-block" or "flex" depending on your layout
         box.style.display = matches ? "inline-block" : "none";
       });
     });
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 </script>
 </body>
 

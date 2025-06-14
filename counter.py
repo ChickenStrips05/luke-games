@@ -33,277 +33,185 @@ def sort():
     # Sample HTML input again after kernel reset
     html = """
 <div class="game-grid">
-<div class="game-box">
-    <a href="/games/action/time-shooter"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1GgC47YHMF93s8lFPpwq5Jl0QjPoO6OiWOA&s"
-        alt="Time Shooter Series" />Time Shooter Series</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/slope"><img
-        src="https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs"
-        alt="Slope" />Slope</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/moto-x3m"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMLxgJq1x3mIES73AsS6AuTKZTuug9nVuoQ&s"
-        alt="Moto X3M" />Moto X3M</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/run-3"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqWWJZJnzyA7AyATROGtMzE5uV1yFmT13Pw&s"
-        alt="Run 3" />Run 3</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/survival-race"><img src="https://watchdocumentaries.com/wp-content/uploads/survival-race-game.jpg"
-        alt="Survival Race" />Survival Race</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/cookie-clicker"><img src="https://upload.wikimedia.org/wikipedia/en/0/06/Cookie_Clicker_logo.png"
-        alt="Cookie Clicker" />Cookie Clicker</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/drift-hunters"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71Gd0HQjdZ6BcHphNEvh1rLhYLL3V-_tSjw&s"
-        alt="Drift Hunters" />Drift Hunters</a>
-</div>
-<div class="game-box">
-    <a href="/games/drive-mad"><img
-        src="https://play-lh.googleusercontent.com/7l3WAPbei9MXrxnCzImpXi2VxjEBtgDl0htwvTnA-YqpJAuQJPpSiby1oB8LZMgD0IAy"
-        alt="Drive Mad" />Drive Mad</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/duck-clicker"><img src="https://img.itch.zone/aW1nLzE0ODU1ODQ1LnBuZw==/original/IfCy77.png"
-        alt="Duck Clicker" />Duck Clicker</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/spear-warzone"><img
-        src="https://1games.io/data/image/game/spear-warzone/banner/spear-wazone-1200x1200.png"
-        alt="Spear Warzone" />Spear Warzone</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/crazy-cattle-3d"><img src="https://kbhgames.com/wp-content/uploads/2025/05/Crazy-Cattle-3D.jpg"
-        alt="Crazy Cattle 3D" />Crazy Cattle 3D
-    </a>
-</div>
-<div class="game-box">
-    <a href="/games/action/basketball-frvr"><img
-        src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=1200,fit=cover,f=png/5aae527bebe68094c3d3276387150197.png"
-        alt="Basketball FRVR" />Basketball FRVR</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/hover-racer-drive"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkthRBqa43q0fy7dkkasxXwZbK7I2PvsVJlQ&s"
-        alt="Hover Racer Drive" />Hover Racer Drive</a>
-</div>
-<div class="game-box">
-    <a href="/games/strategy/escaping-the-prison"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_us-FoQoSP4m9wJjqoeJSuRWThnj7LOJjgw&s"
-        alt="Escaping the Prison" />Escaping the Prison</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/dinosaur-game"><img
-        src="https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg"
-        alt="Dinosaur Game" />Dinosaur</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/hill-climb-racing"><img
-        src="https://play-lh.googleusercontent.com/N0UxhBVUmx8s7y3F7Kqre2AcpXyPDKAp8nHjiPPoOONc_sfugHCYMjBpbUKCMlK_XUs"
-        alt="Hill Climb Racing" />Hill Climb Racing</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/ragdoll-archers"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgKROebbMUje45RYS-FkBGVWfhgcLrsnFcQ&s"
-        alt="Ragdoll Archers" />Ragdoll Archers</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/slope-2"><img src="https://1games.io/data/image/game/slope-2/banner/slope-2_1200x1200.png"
-        alt="Slope 2" />Slope 2</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/geometry-dash-lite"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbnu4fRE-vqOhHPCK1w-L1wtPUrYRmXFrCEQ&s"
-        alt="Geometry Dash Lite" />Geometry Dash Lite</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/under-the-red-sky"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUBT9PxKg9R838IKPRd7H-e80EsPPhKnxYw&s"
-        alt="Under The Red Sky" />Under The Red Sky</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/madalin-stunt-cars-2"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQusfyO2aA-RIpYzKsPPyPXI5wWtGkSTN4CHA&s"
-        alt="Madalin Stunt Cars 2" />Madalin Stunt Cars 2</a>
-</div>
-<div class="game-box">
-    <a href="/games/strategy/creative-kill-chamber"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUpG1sUxY_hNrTqOXaseRqDbgqHuFtDpgxQ&s"
-        alt="Creative Kill Chamber" />Creative Kill Chamber</a>
-</div>
-<div class="game-box">
-    <a href="/games/strategy/creative-kill-chamber-2"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ba3S_wQH-4vpRNquuhNxIvVa6Ax7owRYRQ&s"
-        alt="Creative Kill Chamber 2" />Creative Kill Chamber 2</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/tunnel-rush"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0Ja02fwjrD3RqkAnHIGLCG_Tuzwg5bTs1Q&s"
-        alt="Tunnel Rush" />Tunnel Rush</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/head-soccer-2023"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpImwxBfrVDqm27BAW_onIL5UYsCugaFKMA&s"
-        alt="Head Soccer 2023" />Head Soccer 2023</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/hole-io"><img
-        src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000069917/28c5a57b2711d70dbeb4dd55155691e8135a3069bad3455547392878c0162861"
-        alt="Hole.io" />Hole.io</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/gun-blood"><img
-        src="https://play-lh.googleusercontent.com/74HrzSgWFO3JIIIg2kbKafeETZW7gkh2PGeC4fRAYICNg29X3uelbr6OzR080GI-AhK-"
-        alt="Gun Blood" />Gun Blood</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/funny-shooter-2"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScUXBTe2dQvh7aq3RT4P3fmWgRkTqaMIuP2g&s"
-        alt="Funny Shooter 2" />Funny Shooter 2</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/getaway-shootout"><img src="https://htmlxm.github.io/thumb/getaway-shootout.png"
-        alt="Getaway Shootout" />Getaway Shootout</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/ballistic"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNe8Cx74egEh0VAfHM-SRx3OQWtFSrq1bMiA&s"
-        alt="Ballistic" />Ballistic</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/le-flip-3d"><img
-        src="https://play-lh.googleusercontent.com/sMpJpTPMtTMr9tfusBtbWIz_h2UdX3iwx8Ea4w6vJ-0vyFILvpIMj_JvwVSeS6Xq0bg"
-        alt="Bottle Flip 3D" />Bottle Flip 3D</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/bullet-force"><img
-        src="https://play-lh.googleusercontent.com/d8XjgRT_XjvsNK6gHye4em45MjUa2WAUnT9y5oFDM-Z_95_uOjevcD3gbvc8vBIBGw=w526-h296-rw"
-        alt="Bullet Force" />Bullet Force</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/snake"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_sstbZV02TGbsIwoJvvPpSut1OpWw52WMw&s"
-        alt="Snake" />Snake</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/monkey-mart"><img src="https://i.ytimg.com/vi/KsyQBXdkAuM/maxresdefault.jpg"
-        alt="Monkey Mart" />Monkey Mart</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/papas-pizzeria"><img
-        src="https://papaspizzeria.io/data/image/options/papas-pizzeria-game-banner.jpg"
-        alt="Papa's Pizzeria" />Papa's Pizzeria</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/paper-io-2"><img
-        src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000068359/73341197ab2f46b0b68c46bd610bcd65ba490045423c918e4a9f199cd7584e20"
-        alt="Paper.io 2" />Paper.io 2</a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/smash-karts"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBphEzA60TR726i8NCfCzTddE26HT1UFENA&s"
-        alt="Smash Karts" />Smash Karts</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/pou"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKI39uSxoQ0v8SOJqlXnBqiQMgjlYWODQ6w&s"
-        alt="Pou" />Pou</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/crossy-road"><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Crossy_Road_icon.jpeg"
-        alt="Crossy Road" />Crossy Road</a>
-</div>
-<div class="game-box">
-    <a href="/games/strategy/bloons-td-6"><img
-        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg?t=1738893448"
-        alt="Bloons TD 6" />Bloons TD 6</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/bitlife"><img src="https://static.wikia.nocookie.net/jacksepticeye/images/c/cf/BitLife_logo.png"
-        alt="Bitlife" />Bitlife</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/fortnite"><img
-        src="https://cdn.glitch.global/21e48a88-8990-46c8-9dc5-259bb27daa0a/Capture.PNG?v=1748021224132"
-        alt="Fortnite" /><em>"Fortnite"</em></a>
-</div>
-<div class="game-box">
-    <a href="/games/racing/eggy-car"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3AihY6tU2_XRZ0CU2ZrE6v5qDzgKjkqfKOQ&s"
-        alt="Eggy Car" />Eggy Car</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/1v1-lol"><img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFCA_8XDRi81Dmw7f-woSa_X4XBXdx-q-4Q&s"
-        alt="1v1.lol" />1v1.lol</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/idle-breakout"><img
-        src="https://img.itch.zone/aW1hZ2UvMzI5MTMxLzE4MDAxNDYucG5n/original/bo9BNe.png" alt="Idle Breakout" />Idle
-    Breakout</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/idle-mining-empire"><img
-        src="https://www.mortgagecalculator.org/money-games/idle-mining-empire/idle-mining-empire.png"
-        alt="Idle Mining Empire" />Idle Mining Empire</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/subway-surfers"><img src="https://upload.wikimedia.org/wikipedia/en/a/aa/Subway_Surfers.jpg"
-        alt="Subway Surfers" />Subway Surfers</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/ant-art-tycoon"><img
-        src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/b6c5f4345a8bfc1325319666882840e9.png"
-        alt="Ant Art Tycoon" />Ant Art Tycoon</a>
-</div>
-<div class="game-box">
-    <a href="/games/arcade/fruit-ninja"><img src="https://www.coolmathgames.com/sites/default/files/FruitNinja_OG-Logo.jpg"
-        alt="Fruit Ninja" />Fruit Ninja</a>
-</div>
-<div class="game-box">
-    <a href="/games/simulator/stick-merge"><img
-        src="https://play-lh.googleusercontent.com/yQSKk-7dE2D45ZY70ghdGjGxzRwKQU_TDoy-1LBal2pjJ3wSKOMptCWRq9hgJdI-GVw"
-        alt="Stick Merge" />Stick Merge</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/boxing-random"><img src="https://www.onlinegames.io/media/posts/473/Boxing-Random.jpg"
-        alt="Boxing Random" />Boxing Random</a>
-</div>
-<div class="game-box">
-    <a href="/games/strategy/stickman-hook"><img
-        src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/99e090d154caf30f3625df7e456d5984.png"
-        alt="Stickman Hook" />Stickman Hook</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/rooftop-snipers"><img
-        src="https://img.gamepix.com/games/rooftop-snipers/cover/rooftop-snipers.png" alt="Rooftop Snipers" />Rooftop
-    Snipers</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/gunspin"><img src="https://static.keygames.com/4/113974/98896/1024x1024/gunspin.webp"
-        alt="GunSpin" />GunSpin</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/stickman-army-the-resistance"><img src="https://play-lh.googleusercontent.com/jcOyPcmM2vjbh7ALN6taninGoskE4n9F-R6HgvrcEVs9AGQfYhjLU0VZ21ksuKxN1g"
-        alt="Stickman Army" />Stickman Army, The Resistance</a>
-</div>
-<div class="game-box">
-    <a href="/games/action/stickman-fighter-epic-battles"><img src="https://play-lh.googleusercontent.com/-p6yzlvqe2yK-d5ye_wFVxXBpzzjz030hNOzzn74GakefmjavvRoNOLj_5RFBy379J7Y"
-        alt="Stickman Army" />Stickman Fighter, Epic Battles</a>
-</div>
-<div class="game-box">
-    <a href="/games/strategy/little-alchemy-2"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/little-alchemy-a-lot-of-items-in-scene.jpg"
-        alt="Little Alchemy 2" />Little Alchemy 2</a>
-</div>
-</div>
+    <div class="game-box">
+    <a href="/games/action/1v1-lol"><img alt="1v1.lol" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCFCA_8XDRi81Dmw7f-woSa_X4XBXdx-q-4Q&amp;s"/>1v1.lol</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/basketball-frvr"><img alt="Basketball FRVR" src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=1200,height=1200,fit=cover,f=png/5aae527bebe68094c3d3276387150197.png"/>Basketball FRVR</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/boxing-random"><img alt="Boxing Random" src="https://www.onlinegames.io/media/posts/473/Boxing-Random.jpg"/>Boxing Random</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/bullet-force"><img alt="Bullet Force" src="https://play-lh.googleusercontent.com/d8XjgRT_XjvsNK6gHye4em45MjUa2WAUnT9y5oFDM-Z_95_uOjevcD3gbvc8vBIBGw=w526-h296-rw"/>Bullet Force</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/crazy-cattle-3d"><img alt="Crazy Cattle 3D" src="https://kbhgames.com/wp-content/uploads/2025/05/Crazy-Cattle-3D.jpg"/>Crazy Cattle 3D
+        </a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/funny-shooter-2"><img alt="Funny Shooter 2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScUXBTe2dQvh7aq3RT4P3fmWgRkTqaMIuP2g&amp;s"/>Funny Shooter 2</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/getaway-shootout"><img alt="Getaway Shootout" src="https://htmlxm.github.io/thumb/getaway-shootout.png"/>Getaway Shootout</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/gun-blood"><img alt="Gun Blood" src="https://play-lh.googleusercontent.com/74HrzSgWFO3JIIIg2kbKafeETZW7gkh2PGeC4fRAYICNg29X3uelbr6OzR080GI-AhK-"/>Gun Blood</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/gunspin"><img alt="GunSpin" src="https://static.keygames.com/4/113974/98896/1024x1024/gunspin.webp"/>GunSpin</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/head-soccer-2023"><img alt="Head Soccer 2023" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtpImwxBfrVDqm27BAW_onIL5UYsCugaFKMA&amp;s"/>Head Soccer 2023</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/ragdoll-archers"><img alt="Ragdoll Archers" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPgKROebbMUje45RYS-FkBGVWfhgcLrsnFcQ&amp;s"/>Ragdoll Archers</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/rooftop-snipers"><img alt="Rooftop Snipers" src="https://img.gamepix.com/games/rooftop-snipers/cover/rooftop-snipers.png"/>Rooftop
+        Snipers</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/spear-warzone"><img alt="Spear Warzone" src="https://1games.io/data/image/game/spear-warzone/banner/spear-wazone-1200x1200.png"/>Spear Warzone</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/stickman-army-the-resistance"><img alt="Stickman Army" src="https://play-lh.googleusercontent.com/jcOyPcmM2vjbh7ALN6taninGoskE4n9F-R6HgvrcEVs9AGQfYhjLU0VZ21ksuKxN1g"/>Stickman Army, The Resistance</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/stickman-fighter-epic-battles"><img alt="Stickman Army" src="https://play-lh.googleusercontent.com/-p6yzlvqe2yK-d5ye_wFVxXBpzzjz030hNOzzn74GakefmjavvRoNOLj_5RFBy379J7Y"/>Stickman Fighter, Epic Battles</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/action/time-shooter"><img alt="Time Shooter Series" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1GgC47YHMF93s8lFPpwq5Jl0QjPoO6OiWOA&amp;s"/>Time Shooter Series</a>       
+    </div>
+    <div class="game-box">
+    <a href="/games/action/tunnel-rush"><img alt="Tunnel Rush" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0Ja02fwjrD3RqkAnHIGLCG_Tuzwg5bTs1Q&amp;s"/>Tunnel Rush</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/ballistic"><img alt="Ballistic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNe8Cx74egEh0VAfHM-SRx3OQWtFSrq1bMiA&amp;s"/>Ballistic</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/le-flip-3d"><img alt="Bottle Flip 3D" src="https://play-lh.googleusercontent.com/sMpJpTPMtTMr9tfusBtbWIz_h2UdX3iwx8Ea4w6vJ-0vyFILvpIMj_JvwVSeS6Xq0bg"/>Bottle Flip 3D</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/crossy-road"><img alt="Crossy Road" src="https://upload.wikimedia.org/wikipedia/en/7/71/Crossy_Road_icon.jpeg"/>Crossy Road</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/dinosaur-game"><img alt="Dinosaur Game" src="https://play-lh.googleusercontent.com/iiIJq5JmLFYNI1bVz4IBHyoXs508JcEzHhOgau69bnveF9Wat51-ax9LMPVOlneKwqg"/>Dinosaur</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/fruit-ninja"><img alt="Fruit Ninja" src="https://www.coolmathgames.com/sites/default/files/FruitNinja_OG-Logo.jpg"/>Fruit Ninja</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/geometry-dash-lite"><img alt="Geometry Dash Lite" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbnu4fRE-vqOhHPCK1w-L1wtPUrYRmXFrCEQ&amp;s"/>Geometry Dash Lite</a>   
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/run-3"><img alt="Run 3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqWWJZJnzyA7AyATROGtMzE5uV1yFmT13Pw&amp;s"/>Run 3</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/slope"><img alt="Slope" src="https://play-lh.googleusercontent.com/uJn2i9h7KxYQarC_c3K4qH6o7gLtflFnhD_dN14MNkzHJ1NeNFzCL69jpB5mT0vCoQs"/>Slope</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/slope-2"><img alt="Slope 2" src="https://1games.io/data/image/game/slope-2/banner/slope-2_1200x1200.png"/>Slope 2</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/snake"><img alt="Snake" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_sstbZV02TGbsIwoJvvPpSut1OpWw52WMw&amp;s"/>Snake</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/subway-surfers"><img alt="Subway Surfers" src="https://upload.wikimedia.org/wikipedia/en/a/aa/Subway_Surfers.jpg"/>Subway Surfers</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/arcade/under-the-red-sky"><img alt="Under The Red Sky" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUBT9PxKg9R838IKPRd7H-e80EsPPhKnxYw&amp;s"/>Under The Red Sky</a>      
+    </div>
+
+    <div class="game-box">
+    <a href="/games/racing/drive-mad"><img alt="Drive Mad" src="https://play-lh.googleusercontent.com/7l3WAPbei9MXrxnCzImpXi2VxjEBtgDl0htwvTnA-YqpJAuQJPpSiby1oB8LZMgD0IAy"/>Drive Mad</a>
+    </div>
+
+    <div class="game-box">
+    <a href="/games/racing/drift-hunters"><img alt="Drift Hunters" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71Gd0HQjdZ6BcHphNEvh1rLhYLL3V-_tSjw&amp;s"/>Drift Hunters</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/eggy-car"><img alt="Eggy Car" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3AihY6tU2_XRZ0CU2ZrE6v5qDzgKjkqfKOQ&amp;s"/>Eggy Car</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/hill-climb-racing"><img alt="Hill Climb Racing" src="https://play-lh.googleusercontent.com/N0UxhBVUmx8s7y3F7Kqre2AcpXyPDKAp8nHjiPPoOONc_sfugHCYMjBpbUKCMlK_XUs"/>Hill Climb Racing</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/hover-racer-drive"><img alt="Hover Racer Drive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkthRBqa43q0fy7dkkasxXwZbK7I2PvsVJlQ&amp;s"/>Hover Racer Drive</a>      
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/madalin-stunt-cars-2"><img alt="Madalin Stunt Cars 2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQusfyO2aA-RIpYzKsPPyPXI5wWtGkSTN4CHA&amp;s"/>Madalin Stunt Cars 2</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/moto-x3m"><img alt="Moto X3M" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMLxgJq1x3mIES73AsS6AuTKZTuug9nVuoQ&amp;s"/>Moto X3M</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/smash-karts"><img alt="Smash Karts" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBphEzA60TR726i8NCfCzTddE26HT1UFENA&amp;s"/>Smash Karts</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/racing/survival-race"><img alt="Survival Race" src="https://watchdocumentaries.com/wp-content/uploads/survival-race-game.jpg"/>Survival Race</a>
+    </div>
+
+    <div class="game-box">
+    <a href="/games/simulator/ant-art-tycoon"><img alt="Ant Art Tycoon" src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/b6c5f4345a8bfc1325319666882840e9.png"/>Ant Art Tycoon</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/bitlife"><img alt="Bitlife" src="https://static.wikia.nocookie.net/jacksepticeye/images/c/cf/BitLife_logo.png"/>Bitlife</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/cookie-clicker"><img alt="Cookie Clicker" src="https://upload.wikimedia.org/wikipedia/en/0/06/Cookie_Clicker_logo.png"/>Cookie Clicker</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/duck-clicker"><img alt="Duck Clicker" src="https://img.itch.zone/aW1nLzE0ODU1ODQ1LnBuZw==/original/IfCy77.png"/>Duck Clicker</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/hole-io"><img alt="Hole.io" src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000069917/28c5a57b2711d70dbeb4dd55155691e8135a3069bad3455547392878c0162861"/>Hole.io</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/idle-breakout"><img alt="Idle Breakout" src="https://img.itch.zone/aW1hZ2UvMzI5MTMxLzE4MDAxNDYucG5n/original/bo9BNe.png"/>Idle
+        Breakout</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/idle-mining-empire"><img alt="Idle Mining Empire" src="https://www.mortgagecalculator.org/money-games/idle-mining-empire/idle-mining-empire.png"/>Idle Mining Empire</a>        
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/monkey-mart"><img alt="Monkey Mart" src="https://i.ytimg.com/vi/KsyQBXdkAuM/maxresdefault.jpg"/>Monkey Mart</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/papas-pizzeria"><img alt="Papa's Pizzeria" src="https://papaspizzeria.io/data/image/options/papas-pizzeria-game-banner.jpg"/>Papa's Pizzeria</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/paper-io-2"><img alt="Paper.io 2" src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000068359/73341197ab2f46b0b68c46bd610bcd65ba490045423c918e4a9f199cd7584e20"/>Paper.io 2</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/pou"><img alt="Pou" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKI39uSxoQ0v8SOJqlXnBqiQMgjlYWODQ6w&amp;s"/>Pou</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/simulator/stick-merge"><img alt="Stick Merge" src="https://play-lh.googleusercontent.com/yQSKk-7dE2D45ZY70ghdGjGxzRwKQU_TDoy-1LBal2pjJ3wSKOMptCWRq9hgJdI-GVw"/>Stick Merge</a>
+    </div>
+
+    <div class="game-box">
+    <a href="/games/strategy/bloons-td-6"><img alt="Bloons TD 6" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg?t=1738893448"/>Bloons TD 6</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/strategy/creative-kill-chamber"><img alt="Creative Kill Chamber" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUpG1sUxY_hNrTqOXaseRqDbgqHuFtDpgxQ&amp;s"/>Creative Kill Chamber</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/strategy/creative-kill-chamber-2"><img alt="Creative Kill Chamber 2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ba3S_wQH-4vpRNquuhNxIvVa6Ax7owRYRQ&amp;s"/>Creative Kill Chamber 2</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/strategy/escaping-the-prison"><img alt="Escaping the Prison" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_us-FoQoSP4m9wJjqoeJSuRWThnj7LOJjgw&amp;s"/>Escaping the Prison</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/strategy/little-alchemy-2"><img alt="Little Alchemy 2" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/little-alchemy-a-lot-of-items-in-scene.jpg"/>Little Alchemy 2</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/strategy/stickman-hook"><img alt="Stickman Hook" src="https://img.poki-cdn.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/99e090d154caf30f3625df7e456d5984.png"/>Stickman Hook</a>
+    </div>
+    <div class="game-box">
+    <a href="/games/strategy/happy-glass"><img alt="Happy Glass" src="https://cdn-images-1.medium.com/v2/resize:fit:1600/1*SOrhgaiP7486cPFNnSfYpQ.png"/>Happy Glass</a>
+    </div>
+  </div>
 """
 
     # Parse the HTML and extract game info
